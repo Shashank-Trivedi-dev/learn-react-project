@@ -43,6 +43,7 @@ rootinjector.appendChild(heading);
 </div>
 */
 
+/* episod 3
 const parent = React.createElement("div", {id: "parent"},[ 
 React.createElement("div", {id: "child"},[
 // to pass multiple element in same div level we use arrrar [a,b,c,d]
@@ -63,3 +64,8 @@ console.log(parent)
 
 const root = ReactDOM.createRoot(document.getElementById("rooot"))
 root.render(parent)
+*/
+
+const heading = React.createElement("h1", {id: "heading"}, "this is a heading");
+const root = ReactDOM.createRoot(document.getElementById("rooot"));
+root.render(heading);
