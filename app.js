@@ -1,4 +1,5 @@
-
+import React from "react"
+import ReactDOM from "react-dom/client";
 // part 1 > render div.root via javascript no react
 /* const heading = document.createElement("h1");
 heading.innerHTML= "hellow via javascript";
@@ -58,4 +59,7 @@ React.createElement("div", {id: "child2"},[
 //jsx
  
 console.log(parent)
-ReactDOM.render(parent, document.getElementById('rooot'));
+// ReactDOM.render(parent, document.getElementById('rooot'));
+
+const root = ReactDOM.createRoot(document.getElementById("rooot"))
+root.render(parent)

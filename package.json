@@ -1,0 +1,16 @@
+{
+  "name": "nmaste-react-project",
+  "version": "1.0.0",
+  "description": "this is a app",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "shashank",
+  "license": "ISC",
+  "browserslist" : [
+    "last 2 version"
+  ]
+}
