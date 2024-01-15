@@ -56,8 +56,6 @@ React.createElement("div", {id: "child2"},[
         React.createElement("h2", {className: "classred"},"heading 2 h2 under div child 2")
     ])
 ]);
-
-//jsx
  
 console.log(parent)
 // ReactDOM.render(parent, document.getElementById('rooot'));
@@ -66,3 +64,74 @@ const root = ReactDOM.createRoot(document.getElementById("rooot"))
 root.render(parent)
 */
 
+
+
+//ep 3 jsx
+//heading using react
+// const heading = React.createElement("h1", { id: "heading", className: "classred" }, "This is a heading from React");
+// console.log(heading);
+
+// // heading using JSX
+// const jsxHeading = <h1 className="head">This is a JSX heading</h1>;
+// console.log(jsxHeading);
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// const rooot = ReactDOM.createRoot(document.getElementById("rooot"));
+
+// root.render(heading);
+// rooot.render(jsxHeading);
+
+//  >>  react component -------------------------------------------------- 
+// class based component > old methord
+// functional component > new methord
+
+
+
+//react funtional component
+// >> methord 1
+/*
+const HeadingComponent =() => {
+return (
+    <div>
+        <h1 className='head'>Hello from Functional Component</h1>
+        <h1 className='head'>Hello from Functional Component</h1>
+        <p className="abc">Hello from Functional Component para</p>
+        <h2 className="abc">this is a 3 heading</h2>
+    </div>
+)};
+*/
+
+// javascript and html combined into jsx (its not html or js its jsx)
+//component 
+const Heading = () => (
+    <h1 className="head">hellow using jsx multiple line code snippet title </h1>
+);
+//react element
+const elem = <b>react nest element</b> //nest this elemnt into headelement > element into element >> and then element into component
+const headelement = (
+    <div>
+    <h1 className="head">{elem}head element in jsx with jst itself and javascript </h1>
+    {elem}
+    </div>
+);
+
+const numberelement = 1000; //js code
+// methord 2
+//component
+const HeadingComponent =() => (
+    
+        <div>
+            <h1 className='head'>Hello from Functional Component</h1>
+            <h2>{numberelement} {100 + 200}  </h2>
+            {console.log("this a console log in jsx") }
+            
+            <h2 className="abc">3 ways to call a component as a compont and as a function </h2> 
+            <Heading></Heading>
+            <Heading/>
+            {Heading()}
+            {headelement}
+        </div>
+    );
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeadingComponent/>);
