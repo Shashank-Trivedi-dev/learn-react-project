@@ -1,5 +1,61 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 0% 25px;
+    margin: 5px;
+}
 
-.classred{
-    color: white;
-    background-color: black;
+.logo {
+    width: 100px;
+}
+
+.nav-items {
+    vertical-align: middle;
+    
+}
+
+.nav-items > ul {
+    font-size: 24px;
+    padding: 25px 0px;
+    display: flex;
+}
+
+.nav-items > ul > li {
+    margin: 0px 10px;
+    list-style-type: none;
+}
+.nav-items > ul > li > a {
+    color: black;
+}
+
+.res-card {
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.res-card:hover {
+    border: 2px dashed blueviolet;
+    cursor: pointer;
+}
+.search {
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.reslogo {
+    width: 100%;
+    border: ipx solid black;
+    border-radius: 15px;
+}
+
+.rest-container {
+    display: flex;
+    flex-wrap: wrap;
 }
