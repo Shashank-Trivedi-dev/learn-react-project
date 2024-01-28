@@ -1,7 +1,9 @@
-const Header = () => (
+import { LOGO_URL } from "../utils/constant";
+
+export const Header = () => (
     <div className="header">
        <div className="logo-container">
-           <img className="logo" src="https://cdn.vectorstock.com/i/preview-1x/73/82/food-logo-vector-38377382.jpg"/>
+           <img className="logo" src={LOGO_URL}/>
        </div>
        <div className="nav-items">
            <ul>
