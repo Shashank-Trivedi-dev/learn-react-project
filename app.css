@@ -59,3 +59,10 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.filter-btn {
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
