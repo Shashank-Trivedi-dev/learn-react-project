@@ -10,8 +10,8 @@ const RestCard = ( props ) => {
   
           <h3>{resData.data.name}</h3>
           <h3>{resData.data.cuisines.join(", ")}</h3>
-          <h3>{resData.data.avgRating} stars</h3>
-          <h3>{resData.data.costForTwo / 100 } for tw0</h3>
+          <h3>{resData.data.avgRating} stas</h3>
+          <h3>{resData.data.costForTwo / 100 } for two</h3>
           <h3>{resData.data.deliveryTime} minutes</h3>
           
   
