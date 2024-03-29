@@ -7,8 +7,19 @@ const Body = () => {
 const [resListmin, setresListmin ] = useState(resList);
 
 useEffect(()=>{
-console.log("useEffectcalled")
+fetchData();
 },[]);
+
+const fetchData = async () =>  { 
+const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6404268&lng=77.18589949999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+
+const json = await data.json();
+console.log
+ (json);
+
+
+};
+
 
     return ( 
     <div className="body">
